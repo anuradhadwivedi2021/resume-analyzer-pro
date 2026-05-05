@@ -44,7 +44,7 @@ function UploadResume({ onUploadSuccess, lang }) {
     formData.append("resume", file);
 
     try {
-      const res = await fetch("http://127.0.0.1:5000/upload-resume", {
+      const res = await fetch("https://resume-analyzer-pro-2.onrender.com/upload-resume", {
         method: "POST",
         body: formData,
       });
